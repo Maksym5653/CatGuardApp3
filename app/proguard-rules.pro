@@ -1,0 +1,5 @@
+-keep class org.tensorflow.** { *; }
+-keep class org.java_websocket.** { *; }
+-dontwarn org.tensorflow.**
+-dontwarn okhttp3.**
+-keep class com.catguard.** { *; }

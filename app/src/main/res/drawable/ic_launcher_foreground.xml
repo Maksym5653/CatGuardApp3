@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Фон щита -->
+    <path
+        android:fillColor="#1B5E20"
+        android:pathData="M54,12 L88,26 L88,60 C88,78 72,92 54,96 C36,92 20,78 20,60 L20,26 Z"/>
+
+    <!-- Внутрішня частина щита -->
+    <path
+        android:fillColor="#2E7D32"
+        android:pathData="M54,18 L84,30 L84,60 C84,76 70,88 54,92 C38,88 24,76 24,60 L24,30 Z"/>
+
+    <!-- Голова кота (біле коло) -->
+    <ellipse
+        android:fillColor="#FFFFFF"
+        android:cx="54"
+        android:cy="52"
+        android:rx="16"
+        android:ry="14"/>
+
+    <!-- Вуха кота -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M40,44 L36,32 L46,40 Z"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M68,44 L72,32 L62,40 Z"/>
+
+    <!-- Рожеві вуха всередині -->
+    <path
+        android:fillColor="#F48FB1"
+        android:pathData="M41,42 L38,34 L45,40 Z"/>
+    <path
+        android:fillColor="#F48FB1"
+        android:pathData="M67,42 L70,34 L63,40 Z"/>
+
+    <!-- Очі -->
+    <ellipse
+        android:fillColor="#1A237E"
+        android:cx="47"
+        android:cy="50"
+        android:rx="3"
+        android:ry="3.5"/>
+    <ellipse
+        android:fillColor="#1A237E"
+        android:cx="61"
+        android:cy="50"
+        android:rx="3"
+        android:ry="3.5"/>
+
+    <!-- Відблиски очей -->
+    <ellipse
+        android:fillColor="#FFFFFF"
+        android:cx="48.5"
+        android:cy="48.5"
+        android:rx="1"
+        android:ry="1"/>
+    <ellipse
+        android:fillColor="#FFFFFF"
+        android:cx="62.5"
+        android:cy="48.5"
+        android:rx="1"
+        android:ry="1"/>
+
+    <!-- Носик -->
+    <path
+        android:fillColor="#F48FB1"
+        android:pathData="M52,55 L54,53 L56,55 L54,57 Z"/>
+
+    <!-- Вуса ліві -->
+    <path
+        android:strokeColor="#CCCCCC"
+        android:strokeWidth="1"
+        android:pathData="M38,53 L50,55"/>
+    <path
+        android:strokeColor="#CCCCCC"
+        android:strokeWidth="1"
+        android:pathData="M38,56 L50,56"/>
+
+    <!-- Вуса праві -->
+    <path
+        android:strokeColor="#CCCCCC"
+        android:strokeWidth="1"
+        android:pathData="M70,53 L58,55"/>
+    <path
+        android:strokeColor="#CCCCCC"
+        android:strokeWidth="1"
+        android:pathData="M70,56 L58,56"/>
+
+    <!-- Іконка ока-щита внизу -->
+    <ellipse
+        android:fillColor="#A5D6A7"
+        android:cx="54"
+        android:cy="78"
+        android:rx="8"
+        android:ry="5"/>
+    <ellipse
+        android:fillColor="#1B5E20"
+        android:cx="54"
+        android:cy="78"
+        android:rx="3"
+        android:ry="3"/>
+    <ellipse
+        android:fillColor="#FFFFFF"
+        android:cx="55.5"
+        android:cy="76.8"
+        android:rx="1"
+        android:ry="1"/>
+
+</vector>
