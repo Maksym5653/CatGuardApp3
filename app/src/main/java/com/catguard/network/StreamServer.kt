@@ -45,7 +45,7 @@ class StreamServer(port: Int = 8765) : WebSocketServer(InetSocketAddress(port)) 
     }
 
     /** Відправити статус усім підключеним глядачам */
-    fun broadcast(status: String) {
+    override fun broadcast(status: String) {
         val msg = "STATUS:$status"
         clients.forEach { if (it.isOpen) it.send(msg) }
     }
