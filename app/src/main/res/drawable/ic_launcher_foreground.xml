@@ -5,111 +5,109 @@
     android:viewportWidth="108"
     android:viewportHeight="108">
 
-    <!-- Фон щита -->
+    <!-- Щит -->
     <path
         android:fillColor="#1B5E20"
-        android:pathData="M54,12 L88,26 L88,60 C88,78 72,92 54,96 C36,92 20,78 20,60 L20,26 Z"/>
+        android:pathData="M54,12 C54,12 88,24 88,26 L88,60 C88,78 72,92 54,96 C36,92 20,78 20,60 L20,26 C20,24 54,12 54,12 Z"/>
 
-    <!-- Внутрішня частина щита -->
+    <!-- Внутрішній щит -->
     <path
         android:fillColor="#2E7D32"
-        android:pathData="M54,18 L84,30 L84,60 C84,76 70,88 54,92 C38,88 24,76 24,60 L24,30 Z"/>
+        android:pathData="M54,18 C54,18 84,29 84,31 L84,60 C84,76 70,88 54,92 C38,88 24,76 24,60 L24,31 C24,29 54,18 54,18 Z"/>
 
-    <!-- Голова кота (біле коло) -->
-    <ellipse
+    <!-- Голова кота: коло cx=54 cy=52 r=16 -->
+    <path
         android:fillColor="#FFFFFF"
-        android:cx="54"
-        android:cy="52"
-        android:rx="16"
-        android:ry="14"/>
+        android:pathData="M54,36 A16,16 0 1,0 54,68 A16,16 0 1,0 54,36 Z"/>
 
-    <!-- Вуха кота -->
+    <!-- Ліве вухо -->
     <path
         android:fillColor="#FFFFFF"
         android:pathData="M40,44 L36,32 L46,40 Z"/>
+
+    <!-- Праве вухо -->
     <path
         android:fillColor="#FFFFFF"
         android:pathData="M68,44 L72,32 L62,40 Z"/>
 
-    <!-- Рожеві вуха всередині -->
+    <!-- Рожева середина лівого вуха -->
     <path
         android:fillColor="#F48FB1"
         android:pathData="M41,42 L38,34 L45,40 Z"/>
+
+    <!-- Рожева середина правого вуха -->
     <path
         android:fillColor="#F48FB1"
         android:pathData="M67,42 L70,34 L63,40 Z"/>
 
-    <!-- Очі -->
-    <ellipse
+    <!-- Ліве око: cx=47 cy=50 r=3 -->
+    <path
         android:fillColor="#1A237E"
-        android:cx="47"
-        android:cy="50"
-        android:rx="3"
-        android:ry="3.5"/>
-    <ellipse
-        android:fillColor="#1A237E"
-        android:cx="61"
-        android:cy="50"
-        android:rx="3"
-        android:ry="3.5"/>
+        android:pathData="M47,47 A3,3.5 0 1,0 47,54 A3,3.5 0 1,0 47,47 Z"/>
 
-    <!-- Відблиски очей -->
-    <ellipse
+    <!-- Праве око: cx=61 cy=50 r=3 -->
+    <path
+        android:fillColor="#1A237E"
+        android:pathData="M61,47 A3,3.5 0 1,0 61,54 A3,3.5 0 1,0 61,47 Z"/>
+
+    <!-- Відблиск лівого ока: cx=48.5 cy=48.5 r=1 -->
+    <path
         android:fillColor="#FFFFFF"
-        android:cx="48.5"
-        android:cy="48.5"
-        android:rx="1"
-        android:ry="1"/>
-    <ellipse
+        android:pathData="M48.5,47.5 A1,1 0 1,0 48.5,49.5 A1,1 0 1,0 48.5,47.5 Z"/>
+
+    <!-- Відблиск правого ока: cx=62.5 cy=48.5 r=1 -->
+    <path
         android:fillColor="#FFFFFF"
-        android:cx="62.5"
-        android:cy="48.5"
-        android:rx="1"
-        android:ry="1"/>
+        android:pathData="M62.5,47.5 A1,1 0 1,0 62.5,49.5 A1,1 0 1,0 62.5,47.5 Z"/>
 
     <!-- Носик -->
     <path
         android:fillColor="#F48FB1"
         android:pathData="M52,55 L54,53 L56,55 L54,57 Z"/>
 
-    <!-- Вуса ліві -->
+    <!-- Вуси ліві -->
     <path
         android:strokeColor="#CCCCCC"
         android:strokeWidth="1"
+        android:fillColor="#00000000"
         android:pathData="M38,53 L50,55"/>
     <path
         android:strokeColor="#CCCCCC"
         android:strokeWidth="1"
+        android:fillColor="#00000000"
         android:pathData="M38,56 L50,56"/>
 
-    <!-- Вуса праві -->
+    <!-- Вуси праві -->
     <path
         android:strokeColor="#CCCCCC"
         android:strokeWidth="1"
+        android:fillColor="#00000000"
         android:pathData="M70,53 L58,55"/>
     <path
         android:strokeColor="#CCCCCC"
         android:strokeWidth="1"
+        android:fillColor="#00000000"
         android:pathData="M70,56 L58,56"/>
 
-    <!-- Іконка ока-щита внизу -->
-    <ellipse
-        android:fillColor="#A5D6A7"
-        android:cx="54"
-        android:cy="78"
-        android:rx="8"
-        android:ry="5"/>
-    <ellipse
-        android:fillColor="#1B5E20"
-        android:cx="54"
-        android:cy="78"
-        android:rx="3"
-        android:ry="3"/>
-    <ellipse
+    <!-- Зелена крапка знизу щита (3 кола) -->
+    <!-- Зовнішнє велике: cx=54 cy=78 r=8 -->
+    <path
+        android:fillColor="#33A5D6A7"
+        android:pathData="M54,70 A8,5 0 1,0 54,88 A8,5 0 1,0 54,70 Z"/>
+
+    <!-- Середнє: cx=54 cy=78 r=5 -->
+    <path
+        android:fillColor="#66A5D6A7"
+        android:pathData="M54,73 A5,5 0 1,0 54,83 A5,5 0 1,0 54,73 Z"/>
+
+    <!-- Центральна крапка: cx=54 cy=78 r=3 -->
+    <path
+        android:fillColor="#00E676"
+        android:pathData="M54,75 A3,3 0 1,0 54,81 A3,3 0 1,0 54,75 Z"/>
+
+    <!-- Відблиск крапки: cx=55.5 cy=76.8 r=1 -->
+    <path
         android:fillColor="#FFFFFF"
-        android:cx="55.5"
-        android:cy="76.8"
-        android:rx="1"
-        android:ry="1"/>
+        android:pathData="M55.5,75.8 A1,1 0 1,0 55.5,77.8 A1,1 0 1,0 55.5,75.8 Z"/>
 
 </vector>
